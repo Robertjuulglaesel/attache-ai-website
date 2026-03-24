@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bring Your Own Mac — $99/mo | Attaché AI</title>
+  <meta name="description" content="Already have a Mac? We set up your personal AI assistant on your existing hardware. $1,999 setup + $99/month. Book a free call to get started." />
+  <link rel="canonical" href="https://getattacheai.com/bring-your-own-mac" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --black: #0a0a0a; --white: #ffffff;
+      --gray-50: #fafafa; --gray-100: #f4f4f5;
+      --gray-400: #a1a1aa; --gray-600: #52525b;
+      --gray-800: #27272a; --accent: #c9a96e;
+    }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Inter', sans-serif; background: var(--black); color: var(--white); line-height: 1.6; -webkit-font-smoothing: antialiased; }
+
+    nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      padding: 20px 40px; display: flex; justify-content: space-between; align-items: center;
+      background: rgba(10,10,10,0.9); backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+    .logo { font-size: 18px; font-weight: 600; color: var(--white); text-decoration: none; }
+    .logo span { color: var(--accent); }
+    .nav-cta { background: var(--accent); color: var(--black); padding: 10px 22px; border-radius: 8px; font-size: 14px; font-weight: 600; text-decoration: none; transition: opacity 0.2s; }
+    .nav-cta:hover { opacity: 0.85; }
+
+    /* HERO */
+    .hero {
+      min-height: 70vh; display: flex; flex-direction: column; justify-content: center; align-items: center;
+      text-align: center; padding: 140px 24px 80px; position: relative; overflow: hidden;
+    }
+    .hero::before {
+      content: ''; position: absolute; top: -200px; left: 50%; transform: translateX(-50%);
+      width: 700px; height: 700px;
+      background: radial-gradient(circle, rgba(201,169,110,0.1) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .back-link { color: var(--gray-400); font-size: 14px; text-decoration: none; margin-bottom: 32px; display: inline-flex; align-items: center; gap: 6px; transition: color 0.2s; }
+    .back-link:hover { color: var(--white); }
+    .hero-badge {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: rgba(201,169,110,0.1); border: 1px solid rgba(201,169,110,0.3);
+      color: var(--accent); padding: 6px 16px; border-radius: 100px;
+      font-size: 13px; font-weight: 500; margin-bottom: 24px;
+    }
+    .hero h1 { font-size: clamp(36px, 6vw, 64px); font-weight: 700; line-height: 1.05; letter-spacing: -2px; margin-bottom: 16px; }
+    .hero h1 em { font-style: normal; color: var(--accent); }
+    .price-display { display: flex; align-items: baseline; gap: 8px; justify-content: center; margin-bottom: 24px; }
+    .price-setup { font-size: 18px; color: var(--gray-400); font-weight: 500; }
+    .price-monthly { font-size: 56px; font-weight: 700; letter-spacing: -2px; color: var(--white); }
+    .price-unit { font-size: 20px; color: var(--gray-400); }
+    .hero p { font-size: clamp(16px, 2vw, 19px); color: var(--gray-400); max-width: 520px; margin-bottom: 40px; }
+    .hero-buttons { display: flex; gap: 16px; flex-wrap: wrap; justify-content: center; }
+    .btn-primary { background: var(--accent); color: var(--black); padding: 16px 32px; border-radius: 10px; font-size: 16px; font-weight: 600; text-decoration: none; transition: opacity 0.2s; }
+    .btn-primary:hover { opacity: 0.85; }
+    .btn-secondary { background: rgba(255,255,255,0.08); color: var(--white); padding: 16px 32px; border-radius: 10px; font-size: 16px; font-weight: 600; text-decoration: none; border: 1px solid rgba(255,255,255,0.12); transition: all 0.2s; }
+    .btn-secondary:hover { background: rgba(255,255,255,0.12); }
+
+    /* SECTIONS */
+    section { padding: 80px 24px; }
+    .container { max-width: 900px; margin: 0 auto; }
+    .section-label { font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacing: 2px; color: var(--accent); margin-bottom: 12px; }
+    .section-title { font-size: clamp(28px, 4vw, 44px); font-weight: 700; letter-spacing: -1px; line-height: 1.1; margin-bottom: 16px; }
+    .section-sub { font-size: 18px; color: var(--gray-400); max-width: 560px; }
+
+    /* INCLUDES */
+    .includes { background: var(--gray-50); color: var(--black); }
+    .includes .section-title { color: var(--black); }
+    .includes .section-label { color: var(--accent); }
+    .includes-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 2px; margin-top: 48px; background: #e4e4e7; border-radius: 16px; overflow: hidden; }
+    .include-card { background: var(--white); padding: 36px; }
+    .include-icon { font-size: 28px; margin-bottom: 16px; }
+    .include-card h3 { font-size: 17px; font-weight: 600; margin-bottom: 8px; color: var(--black); }
+    .include-card p { font-size: 14px; color: var(--gray-600); line-height: 1.6; }
+
+    /* CTA BLOCK */
+    .cta-block { background: var(--gray-800); text-align: center; padding: 72px 24px; }
+    .cta-block h2 { font-size: clamp(28px, 4vw, 44px); font-weight: 700; letter-spacing: -1px; margin-bottom: 16px; }
+    .cta-block p { font-size: 18px; color: var(--gray-400); margin-bottom: 36px; max-width: 480px; margin-left: auto; margin-right: auto; }
+    .cta-buttons { display: flex; gap: 16px; flex-wrap: wrap; justify-content: center; }
+
+    /* HOW IT WORKS */
+    .how { background: var(--black); }
+    .steps { margin-top: 48px; display: flex; flex-direction: column; }
+    .step { display: grid; grid-template-columns: 56px 1fr; gap: 28px; padding: 32px 0; border-bottom: 1px solid rgba(255,255,255,0.06); align-items: start; }
+    .step:last-child { border-bottom: none; }
+    .step-num { font-size: 13px; font-weight: 600; color: var(--accent); background: rgba(201,169,110,0.1); border: 1px solid rgba(201,169,110,0.2); width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; }
+    .step h3 { font-size: 18px; font-weight: 600; margin-bottom: 6px; }
+    .step p { font-size: 15px; color: var(--gray-400); }
+
+    /* FAQ */
+    .faq { background: var(--black); border-top: 1px solid rgba(255,255,255,0.06); }
+    .faq-list { margin-top: 48px; display: flex; flex-direction: column; }
+    .faq-item { padding: 28px 0; border-bottom: 1px solid rgba(255,255,255,0.06); }
+    .faq-item:last-child { border-bottom: none; }
+    .faq-item h3 { font-size: 17px; font-weight: 600; margin-bottom: 10px; }
+    .faq-item p { font-size: 15px; color: var(--gray-400); line-height: 1.7; }
+
+    /* FINAL CTA */
+    .final-cta { background: var(--black); text-align: center; padding: 100px 24px; }
+    .final-cta h2 { font-size: clamp(32px, 5vw, 52px); font-weight: 700; letter-spacing: -1.5px; margin-bottom: 16px; }
+    .final-cta p { font-size: 18px; color: var(--gray-400); margin-bottom: 40px; }
+
+    footer { padding: 32px 24px; text-align: center; border-top: 1px solid rgba(255,255,255,0.06); color: var(--gray-600); font-size: 14px; }
+
+    @media (max-width: 600px) {
+      nav { padding: 16px 20px; }
+      .hero-buttons, .cta-buttons { flex-direction: column; align-items: center; }
+      .step { grid-template-columns: 1fr; }
+      .step-num { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="index.html" class="logo">Attaché<span>.</span>AI</a>
+    <a href="https://calendly.com/getattacheai" class="nav-cta" target="_blank">Book a Free Call</a>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <a href="index.html" class="back-link">← Back to home</a>
+    <div class="hero-badge">✦ Use your existing Mac</div>
+    <h1>Bring Your Own Mac.<br /><em>Own it for life.</em></h1>
+    <div class="price-display">
+      <span class="price-setup">$1,999 setup +</span>
+      <span class="price-monthly">$99</span>
+      <span class="price-unit">/mo</span>
+    </div>
+    <p>Already have a Mac at home or work? We set up your personal AI assistant on it — fully configured, connected, and yours to keep forever.</p>
+    <div class="hero-buttons">
+      <a href="https://calendly.com/getattacheai" class="btn-primary" target="_blank">Book a Free Call</a>
+      <a href="#includes" class="btn-secondary">See What's Included</a>
+    </div>
+  </section>
+
+  <!-- WHAT'S INCLUDED -->
+  <section class="includes" id="includes">
+    <div class="container">
+      <div class="section-label">What's included</div>
+      <h2 class="section-title">Everything you need.<br />Nothing you don't.</h2>
+      <p class="section-sub" style="color:var(--gray-600)">One setup. Every integration. Yours from day one.</p>
+
+      <div class="includes-grid">
+        <div class="include-card">
+          <div class="include-icon">🤖</div>
+          <h3>AI Agent Setup (OpenClaw)</h3>
+          <p>Your assistant configured from scratch — memory, personality, integrations. It knows your name, your preferences, and your life before your first message.</p>
+        </div>
+        <div class="include-card">
+          <div class="include-icon">📱</div>
+          <h3>Telegram Integration</h3>
+          <p>Text your assistant from your phone whenever you need it. No new apps to learn — just a message and a response, any time of day.</p>
+        </div>
+        <div class="include-card">
+          <div class="include-icon">🖥️</div>
+          <h3>Remote Desktop Access</h3>
+          <p>Access your assistant from any device, anywhere. Your Mac runs 24/7 — your assistant is always on, always ready.</p>
+        </div>
+        <div class="include-card">
+          <div class="include-icon">🎙️</div>
+          <h3>Voice Setup</h3>
+          <p>Your assistant makes and receives phone calls on your behalf. Give it a number and it handles calls the way you would — if you had the time.</p>
+        </div>
+        <div class="include-card">
+          <div class="include-icon">🔐</div>
+          <h3>Secure Payments Guide</h3>
+          <p>A tested, documented guide to handling payments through your assistant without exposing your financial info. Zero guesswork.</p>
+        </div>
+        <div class="include-card">
+          <div class="include-icon">📧</div>
+          <h3>Email & Calendar Connected</h3>
+          <p>Your assistant reads your email, manages your calendar, and handles scheduling — so you stop living in your inbox.</p>
+        </div>
+        <div class="include-card">
+          <div class="include-icon">🛠️</div>
+          <h3>Skill Building Support</h3>
+          <p>Need your assistant to do something new? We build the skill. Your AI keeps getting more capable — and more valuable — over time.</p>
+        </div>
+        <div class="include-card">
+          <div class="include-icon">🤝</div>
+          <h3>Ongoing Partnership</h3>
+          <p>We're not a setup shop — we're your partner. One message away whenever you need a tune-up, a new integration, or a new capability.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA BLOCK 1 -->
+  <div class="cta-block">
+    <h2>Ready to stop renting AI?</h2>
+    <p>Book a free 30-minute call. We'll walk you through exactly what your setup will look like.</p>
+    <div class="cta-buttons">
+      <a href="https://calendly.com/getattacheai" class="btn-primary" target="_blank">Book a Free Call</a>
+      <a href="index.html" class="btn-secondary">Compare Plans</a>
+    </div>
+  </div>
+
+  <!-- HOW IT WORKS -->
+  <section class="how">
+    <div class="container">
+      <div class="section-label">How it works</div>
+      <h2 class="section-title">One call. Five days.<br />Yours forever.</h2>
+      <p class="section-sub">We do the work. You own the result.</p>
+
+      <div class="steps">
+        <div class="step">
+          <div class="step-num">01</div>
+          <div>
+            <h3>Book your free call</h3>
+            <p>30 minutes. We learn how you work, what you want handled, and how you like to be reached.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-num">02</div>
+          <div>
+            <h3>We set up on your Mac</h3>
+            <p>Remote access to your machine. We install everything, connect every integration, load your preferences. Your data never leaves your hardware.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-num">03</div>
+          <div>
+            <h3>You take ownership</h3>
+            <p>We walk you through your assistant, make sure everything feels right, and hand you the keys. From this point — it's yours.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-num">04</div>
+          <div>
+            <h3>It compounds every week</h3>
+            <p>Every conversation makes it smarter. Every week it knows you better. After a year, it's worth more to you than the day you set it up.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA BLOCK 2 -->
+  <div class="cta-block">
+    <h2>Your assistant is 5 days away.</h2>
+    <p>The only thing between you and owning your AI is a 30-minute call.</p>
+    <div class="cta-buttons">
+      <a href="https://calendly.com/getattacheai" class="btn-primary" target="_blank">Book a Free Call</a>
+    </div>
+  </div>
+
+  <!-- FAQ -->
+  <section class="faq">
+    <div class="container">
+      <div class="section-label">Questions</div>
+      <h2 class="section-title">Straight answers.</h2>
+
+      <div class="faq-list">
+        <div class="faq-item">
+          <h3>Which Mac do I need?</h3>
+          <p>Any Mac running macOS Ventura or later. MacBook, iMac, Mac Mini, Mac Studio — all work. If you're unsure, mention your model on the call and we'll confirm in 30 seconds.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Does my Mac need to be on all the time?</h3>
+          <p>For your assistant to be available 24/7, yes — it needs to stay on and connected to the internet. Most clients either use a Mac Mini dedicated to this, or keep their machine on. If that's a concern, the cloud plan removes it entirely.</p>
+        </div>
+        <div class="faq-item">
+          <h3>What happens if I stop the monthly subscription?</h3>
+          <p>Your assistant stays on your hardware. You own it. We won't remotely wipe it or lock you out. The monthly fee covers our ongoing partnership — support, skill building, and improvements. If you cancel, your assistant keeps running exactly as configured.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Is the setup fee refundable?</h3>
+          <p>If we set everything up and your assistant isn't working as described within 14 days, we'll make it right — or refund you. We stand behind our work.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FINAL CTA -->
+  <section class="final-cta">
+    <div class="container">
+      <h2>Own your AI.<br /><em style="font-style:normal;color:var(--accent)">For life.</em></h2>
+      <p>$1,999 setup · $99/month · 30-minute onboarding call</p>
+      <div class="cta-buttons" style="justify-content:center;">
+        <a href="https://calendly.com/getattacheai" class="btn-primary" target="_blank">Book a Free Call</a>
+        <a href="index.html" class="btn-secondary">Back to Home</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 Attaché AI · <a href="mailto:hello@getattacheai.com" style="color:inherit">hello@getattacheai.com</a> · <a href="index.html" style="color:inherit">Back to home</a></p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,873 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Own Your AI Assistant For Life | Attaché AI</title>
+  <meta name="description" content="Stop renting generic AI. Own a personal assistant that runs on your hardware, knows your life, and gets smarter every day. Attaché AI sets it up — you keep it forever." />
+  <link rel="canonical" href="https://getattacheai.com/" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Own Your AI Assistant For Life | Attaché AI" />
+  <meta property="og:description" content="Stop renting generic AI. Own a personal assistant on your own hardware — private, fully yours, smarter every day." />
+  <meta property="og:url" content="https://getattacheai.com" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://getattacheai.com/og-image.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Own Your AI Assistant For Life | Attaché AI" />
+  <meta name="twitter:description" content="Stop renting AI that resets when you close the tab. Own a personal assistant on your own hardware — smarter every day, yours for life." />
+
+  <!-- Structured Data: Organization -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Attaché AI",
+    "url": "https://getattacheai.com",
+    "description": "Own your AI assistant for life. Attaché AI sets up a personal AI on your own hardware — private, fully yours, and getting smarter every day.",
+    "founder": {
+      "@type": "Person",
+      "name": "Robert Juul Glaesel"
+    },
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "email": "hello@getattacheai.com",
+      "contactType": "sales"
+    }
+  }
+  </script>
+
+  <!-- Structured Data: Service -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Personal AI Assistant Setup",
+    "description": "Own your AI assistant for life. We set up a personal AI on your own hardware — OpenClaw agent, Telegram, voice, remote desktop, and more — all done for you.",
+    "provider": {
+      "@type": "Organization",
+      "name": "Attaché AI",
+      "url": "https://getattacheai.com"
+    },
+    "offers": [
+      {
+        "@type": "Offer",
+        "name": "Bring Your Own Mac",
+        "price": "1999",
+        "priceCurrency": "USD",
+        "description": "One-time setup fee of $1,999 plus $99/month. Use your existing Mac hardware.",
+        "priceSpecification": {
+          "@type": "UnitPriceSpecification",
+          "price": "99",
+          "priceCurrency": "USD",
+          "unitText": "MONTH"
+        }
+      },
+      {
+        "@type": "Offer",
+        "name": "We Handle Everything",
+        "price": "1999",
+        "priceCurrency": "USD",
+        "description": "One-time setup fee of $1,999 plus $199/month. Includes a dedicated cloud Mac Mini — no hardware required.",
+        "priceSpecification": {
+          "@type": "UnitPriceSpecification",
+          "price": "199",
+          "priceCurrency": "USD",
+          "unitText": "MONTH"
+        }
+      }
+    ]
+  }
+  </script>
+
+  <!-- Structured Data: FAQPage -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is Attaché AI?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Attaché AI is a done-for-you service that sets up a personal AI assistant tailored to your life and work. We handle all the technical setup — you just show up and start using it."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How long does setup take?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Most clients are fully up and running within 3–5 business days after their onboarding call."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do I need to own a Mac?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. We offer two plans: one for clients who already have a Mac, and one that includes a dedicated cloud-hosted Mac Mini — so you don't need to buy any hardware at all."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is my data private?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Your AI assistant runs on your own hardware or your own dedicated cloud server. Your conversations and data are never shared with third parties."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What can the AI assistant do?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Your assistant can manage email, handle your calendar, send messages on WhatsApp, iMessage, or Telegram, make phone calls on your behalf, search the web, set reminders, automate tasks, and learn your preferences over time."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How much does Attaché AI cost?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "There is a one-time setup fee of $1,999. After that, it is $99/month if you use your own Mac, or $199/month if you want us to provide a dedicated cloud Mac Mini."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Who is Attaché AI for?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Attaché AI is built for busy professionals, entrepreneurs, and executives who want the productivity benefits of a personal AI assistant without the technical complexity of setting one up themselves."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What messaging apps does it work with?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Your assistant works with iMessage, WhatsApp, Telegram, and more. You can reach it from whatever app you already use."
+        }
+      }
+    ]
+  }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --black: #0a0a0a;
+      --white: #ffffff;
+      --gray-50: #fafafa;
+      --gray-100: #f4f4f5;
+      --gray-400: #a1a1aa;
+      --gray-600: #52525b;
+      --gray-800: #27272a;
+      --accent: #c9a96e;
+      --accent-light: #f0e6d3;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--black);
+      color: var(--white);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* NAV */
+    nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 100;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: rgba(10,10,10,0.85);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+
+    .logo {
+      font-size: 18px;
+      font-weight: 600;
+      letter-spacing: -0.3px;
+      color: var(--white);
+      text-decoration: none;
+    }
+
+    .logo span { color: var(--accent); }
+
+    nav a.cta-nav {
+      background: var(--accent);
+      color: var(--black);
+      padding: 10px 22px;
+      border-radius: 8px;
+      font-size: 14px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: opacity 0.2s;
+    }
+    nav a.cta-nav:hover { opacity: 0.85; }
+
+    /* HERO */
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 120px 24px 80px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: -200px; left: 50%;
+      transform: translateX(-50%);
+      width: 800px; height: 800px;
+      background: radial-gradient(circle, rgba(201,169,110,0.12) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(201,169,110,0.1);
+      border: 1px solid rgba(201,169,110,0.3);
+      color: var(--accent);
+      padding: 6px 16px;
+      border-radius: 100px;
+      font-size: 13px;
+      font-weight: 500;
+      margin-bottom: 32px;
+      letter-spacing: 0.3px;
+    }
+
+    .hero h1 {
+      font-size: clamp(42px, 7vw, 80px);
+      font-weight: 700;
+      line-height: 1.05;
+      letter-spacing: -2px;
+      max-width: 800px;
+      margin-bottom: 24px;
+    }
+
+    .hero h1 em {
+      font-style: normal;
+      color: var(--accent);
+    }
+
+    .hero p {
+      font-size: clamp(17px, 2vw, 20px);
+      color: var(--gray-400);
+      max-width: 520px;
+      margin-bottom: 48px;
+      font-weight: 400;
+    }
+
+    .hero-cta {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 16px;
+      width: 100%;
+      max-width: 420px;
+    }
+
+    .email-form {
+      display: flex;
+      width: 100%;
+      gap: 0;
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.12);
+      border-radius: 12px;
+      overflow: hidden;
+      transition: border-color 0.2s;
+    }
+    .email-form:focus-within { border-color: var(--accent); }
+
+    .email-form input {
+      flex: 1;
+      background: transparent;
+      border: none;
+      padding: 16px 20px;
+      font-size: 15px;
+      color: var(--white);
+      font-family: 'Inter', sans-serif;
+      outline: none;
+    }
+    .email-form input::placeholder { color: var(--gray-600); }
+
+    .email-form button {
+      background: var(--accent);
+      color: var(--black);
+      border: none;
+      padding: 16px 24px;
+      font-size: 14px;
+      font-weight: 600;
+      cursor: pointer;
+      font-family: 'Inter', sans-serif;
+      white-space: nowrap;
+      transition: opacity 0.2s;
+    }
+    .email-form button:hover { opacity: 0.85; }
+
+    .hero-note {
+      font-size: 13px;
+      color: var(--gray-600);
+    }
+
+    /* LOGOS / SOCIAL PROOF */
+    .proof {
+      padding: 40px 24px;
+      text-align: center;
+      border-top: 1px solid rgba(255,255,255,0.06);
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+    .proof p {
+      font-size: 13px;
+      color: var(--gray-600);
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      font-weight: 500;
+      margin-bottom: 20px;
+    }
+    .proof-logos {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 40px;
+      flex-wrap: wrap;
+      color: var(--gray-600);
+      font-size: 15px;
+      font-weight: 500;
+    }
+
+    /* SECTIONS */
+    section { padding: 100px 24px; }
+
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .section-label {
+      font-size: 12px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: var(--accent);
+      margin-bottom: 16px;
+    }
+
+    .section-title {
+      font-size: clamp(30px, 4vw, 48px);
+      font-weight: 700;
+      letter-spacing: -1px;
+      line-height: 1.1;
+      margin-bottom: 16px;
+    }
+
+    .section-sub {
+      font-size: 18px;
+      color: var(--gray-400);
+      max-width: 560px;
+    }
+
+    /* WHAT YOU GET */
+    .features {
+      background: var(--gray-50);
+      color: var(--black);
+    }
+    .features .section-title { color: var(--black); }
+    .features .section-label { color: var(--accent); }
+    .features .section-sub { color: var(--gray-600); }
+
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2px;
+      margin-top: 60px;
+      background: #e4e4e7;
+      border-radius: 16px;
+      overflow: hidden;
+    }
+
+    .feature-card {
+      background: var(--white);
+      padding: 40px;
+    }
+
+    .feature-icon {
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+
+    .feature-card h3 {
+      font-size: 18px;
+      font-weight: 600;
+      margin-bottom: 10px;
+      color: var(--black);
+    }
+
+    .feature-card p {
+      font-size: 15px;
+      color: var(--gray-600);
+      line-height: 1.6;
+    }
+
+    /* HOW IT WORKS */
+    .how {
+      background: var(--black);
+    }
+
+    .steps {
+      margin-top: 60px;
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+    }
+
+    .step {
+      display: grid;
+      grid-template-columns: 60px 1fr;
+      gap: 32px;
+      padding: 40px 0;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+      align-items: start;
+    }
+    .step:last-child { border-bottom: none; }
+
+    .step-num {
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--accent);
+      background: rgba(201,169,110,0.1);
+      border: 1px solid rgba(201,169,110,0.2);
+      width: 44px; height: 44px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .step h3 {
+      font-size: 20px;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+
+    .step p {
+      font-size: 16px;
+      color: var(--gray-400);
+    }
+
+    /* PRICING */
+    .pricing {
+      background: var(--gray-800);
+    }
+    .pricing .section-title { color: var(--white); }
+    .pricing .section-sub { color: var(--gray-400); }
+
+    .pricing-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 24px;
+      margin-top: 60px;
+    }
+
+    .pricing-card {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 16px;
+      padding: 40px;
+      position: relative;
+    }
+
+    .pricing-card.featured {
+      background: var(--accent);
+      border-color: var(--accent);
+      color: var(--black);
+    }
+
+    .pricing-card .badge {
+      position: absolute;
+      top: -12px; left: 50%;
+      transform: translateX(-50%);
+      background: var(--black);
+      color: var(--accent);
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      padding: 4px 14px;
+      border-radius: 100px;
+      white-space: nowrap;
+    }
+
+    .pricing-card h3 {
+      font-size: 16px;
+      font-weight: 600;
+      margin-bottom: 8px;
+      opacity: 0.7;
+    }
+
+    .pricing-card .price {
+      font-size: 48px;
+      font-weight: 700;
+      letter-spacing: -2px;
+      line-height: 1;
+      margin-bottom: 4px;
+    }
+
+    .pricing-card .price-note {
+      font-size: 14px;
+      opacity: 0.6;
+      margin-bottom: 32px;
+    }
+
+    .pricing-card ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-bottom: 36px;
+    }
+
+    .pricing-card ul li {
+      font-size: 15px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .pricing-card ul li::before {
+      content: '✓';
+      font-weight: 700;
+      font-size: 13px;
+    }
+
+    .pricing-card .btn {
+      display: block;
+      text-align: center;
+      padding: 14px;
+      border-radius: 10px;
+      font-size: 15px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: opacity 0.2s;
+    }
+
+    .pricing-card .btn:hover { opacity: 0.85; }
+
+    .pricing-card:not(.featured) .btn {
+      background: rgba(255,255,255,0.1);
+      color: var(--white);
+    }
+
+    .pricing-card.featured .btn {
+      background: var(--black);
+      color: var(--white);
+    }
+
+    /* FINAL CTA */
+    .final-cta {
+      background: var(--black);
+      text-align: center;
+    }
+
+    .final-cta h2 {
+      font-size: clamp(32px, 5vw, 56px);
+      font-weight: 700;
+      letter-spacing: -1.5px;
+      margin-bottom: 20px;
+    }
+
+    .final-cta p {
+      font-size: 18px;
+      color: var(--gray-400);
+      margin-bottom: 48px;
+    }
+
+    /* FOOTER */
+    footer {
+      padding: 32px 24px;
+      text-align: center;
+      border-top: 1px solid rgba(255,255,255,0.06);
+      color: var(--gray-600);
+      font-size: 14px;
+    }
+
+    @media (max-width: 600px) {
+      nav { padding: 16px 20px; }
+      .email-form { flex-direction: column; border-radius: 12px; }
+      .email-form button { border-radius: 0 0 10px 10px; padding: 14px; }
+      .step { grid-template-columns: 1fr; }
+      .step-num { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <a href="#" class="logo">Attaché<span>.</span>AI</a>
+    <a href="examples.html" style="color:var(--gray-400);font-size:14px;font-weight:500;text-decoration:none;margin-right:24px;">See Examples</a><a href="#waitlist" class="cta-nav">Get Early Access</a>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-badge">✦ Stop renting AI. Start owning it.</div>
+    <h1>Own your AI assistant.<br /><em>For life.</em></h1>
+    <p>Every AI subscription resets when you close the tab. Yours remembers everything. We build your personal assistant on your own hardware — private, fully yours, and getting smarter every day you use it.</p>
+    <div class="hero-cta" id="waitlist">
+      <form class="email-form" onsubmit="handleSubmit(event)">
+        <input type="email" placeholder="Enter your email address" required />
+        <button type="submit">Get Early Access</button>
+      </form>
+      <span class="hero-note">No credit card required · Limited clients per month</span>
+    </div>
+  </section>
+
+  <!-- SOCIAL PROOF -->
+  <div class="proof">
+    <p>Everything included in your setup</p>
+    <div class="proof-logos">
+      <span>🤖 AI Agent Setup</span>
+      <span>🖥️ Remote Desktop</span>
+      <span>📱 Telegram Access</span>
+      <span>🎙️ Voice Setup</span>
+      <span>🔐 Payment Guide</span>
+      <span>🛠️ Skill Building</span>
+    </div>
+  </div>
+
+  <!-- WHAT YOU GET -->
+  <section class="features">
+    <div class="container">
+      <div class="section-label">What you own</div>
+      <h2 class="section-title">Not a subscription.<br />An asset.</h2>
+      <p class="section-sub">Everything configured, connected, and handed to you. Yours to keep — and it compounds in value every day you use it.</p>
+
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">🤖</div>
+          <h3>Your AI Agent, Fully Built</h3>
+          <p>OpenClaw setup from scratch. Memory, integrations, automations — all done. It knows your name, your schedule, and your preferences before your first conversation.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🖥️</div>
+          <h3>Remote Desktop Access</h3>
+          <p>Reach your assistant from any device, anywhere in the world. It's always on. It doesn't sleep and it doesn't quit.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">📱</div>
+          <h3>Telegram — Your Direct Line</h3>
+          <p>Text your assistant from your phone like you'd text a person. No new apps. No new logins. Just a message and a response.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🎙️</div>
+          <h3>Voice, Built In</h3>
+          <p>Call your assistant. It picks up, handles it, and reports back. Your AI answers the phone too — and makes calls on your behalf.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🔐</div>
+          <h3>Secure Payments Guide</h3>
+          <p>We show you exactly how to handle payments without exposing your financial info. Tested, documented, and handed to you.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🛠️</div>
+          <h3>Skills That Grow With You</h3>
+          <p>Need your assistant to do something new? We build the skill. Your AI keeps getting more capable — and more valuable.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section class="how">
+    <div class="container">
+      <div class="section-label">How it works</div>
+      <h2 class="section-title">One call. Five days.<br />Yours forever.</h2>
+      <p class="section-sub">We do the work. You own the result.</p>
+
+      <div class="steps">
+        <div class="step">
+          <div class="step-num">01</div>
+          <div>
+            <h3>30 minutes with us</h3>
+            <p>Tell us how you work and what you want handled. We take it from there.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-num">02</div>
+          <div>
+            <h3>We build your assistant</h3>
+            <p>Full setup on your hardware or a private cloud server. Every integration connected. Every preference loaded. Your data never leaves your control.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-num">03</div>
+          <div>
+            <h3>You take ownership</h3>
+            <p>We walk you through it, make sure everything feels right, and hand you the keys. From this point — it's yours.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-num">04</div>
+          <div>
+            <h3>It compounds over time</h3>
+            <p>Every conversation makes it smarter. Every week it knows you better. After a year, it's worth more to you than the day you set it up.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRICING -->
+  <section class="pricing">
+    <div class="container">
+      <div class="section-label">Pricing</div>
+      <h2 class="section-title">One investment.<br />Yours forever.</h2>
+      <p class="section-sub">$1,999 to set it up right. Then keep it running for less than most people spend on coffee.</p>
+
+      <div class="pricing-grid" style="max-width:760px;margin:60px auto 0;">
+
+        <div class="pricing-card">
+          <h3>Bring Your Own Mac</h3>
+          <div class="price">$99<span style="font-size:20px;font-weight:500;letter-spacing:0">/mo</span></div>
+          <div class="price-note">+ $1,999 one-time setup</div>
+          <ul>
+            <li>Works on your existing Mac</li>
+            <li>Full AI agent setup — OpenClaw configured</li>
+            <li>Telegram, voice & remote desktop</li>
+            <li>Email & calendar connected</li>
+            <li>Secure payments guide</li>
+            <li>Skill building support</li>
+            <li>Ongoing partnership</li>
+          </ul>
+          <a href="bring-your-own-mac.html" class="btn">Learn More</a>
+        </div>
+
+        <div class="pricing-card featured">
+          <div class="badge">Most Popular</div>
+          <h3>We Handle Everything</h3>
+          <div class="price">$199<span style="font-size:20px;font-weight:500;letter-spacing:0">/mo</span></div>
+          <div class="price-note">+ $1,999 one-time setup</div>
+          <ul>
+            <li>Dedicated cloud Mac Mini — yours alone</li>
+            <li>No hardware to buy or maintain</li>
+            <li>Access from anywhere in the world</li>
+            <li>Full AI agent setup — OpenClaw configured</li>
+            <li>Telegram, voice & remote desktop</li>
+            <li>Email & calendar connected</li>
+            <li>Secure payments guide</li>
+            <li>Skill building support & ongoing partnership</li>
+          </ul>
+          <a href="we-handle-everything.html" class="btn">Learn More</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="how" id="faq">
+    <div class="container">
+      <div class="section-label">FAQ</div>
+      <h2 class="section-title">Common questions.</h2>
+      <p class="section-sub">Straight answers.</p>
+
+      <div class="steps" style="margin-top:48px;">
+        <div class="step">
+          <div class="step-num">?</div>
+          <div>
+            <h3>What does "own your AI" actually mean?</h3>
+            <p>It means your assistant lives on your hardware — not our servers. Your conversations stay private. Your data doesn't train anyone else's model. If you ever stop working with us, the assistant is still yours. You own it.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-num">?</div>
+          <div>
+            <h3>How is this different from ChatGPT or Claude?</h3>
+            <p>Every subscription AI resets when you close the tab. You're renting access to a generic tool. Your Attaché assistant is yours — it lives on your hardware, remembers your entire history, knows your business, and gets better every single day. You can't rent that. You have to own it.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-num">?</div>
+          <div>
+            <h3>Do I need to own a Mac?</h3>
+            <p>No. Use a Mac you already own, or we'll provision a dedicated cloud Mac Mini for you. Either way — private machine, not a shared server.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-num">?</div>
+          <div>
+            <h3>What can my assistant actually do?</h3>
+            <p>Read and reply to email. Manage your calendar. Text you on Telegram. Make phone calls on your behalf. Book appointments. Search the web. Set reminders. Build automations. And learn your preferences over time.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-num">?</div>
+          <div>
+            <h3>Is my data private?</h3>
+            <p>Yes. Your assistant runs on your own hardware or a dedicated server we set up for you. We don't have access to your conversations. Nobody does.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-num">?</div>
+          <div>
+            <h3>Who is this for?</h3>
+            <p>People with the means to invest in their productivity — but not the time to spend weeks figuring out AI. If you've ever thought "I need an assistant" but couldn't justify a full-time hire, this is it. At a fraction of the cost.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FINAL CTA -->
+  <section class="final-cta">
+    <div class="container">
+      <h2>Make it yours.<br /><em style="font-style:normal;color:var(--accent)">For life.</em></h2>
+      <p>We take on a limited number of clients each month. Join the waitlist — we'll reach out within 48 hours.</p>
+      <form class="email-form" style="max-width:420px;margin:0 auto;" onsubmit="handleSubmit(event)">
+        <input type="email" placeholder="Enter your email address" required />
+        <button type="submit">Join Waitlist</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2026 Attaché AI · <a href="mailto:hello@getattacheai.com" style="color:inherit">hello@getattacheai.com</a></p>
+  </footer>
+
+  <script>
+    function handleSubmit(e) {
+      e.preventDefault();
+      const input = e.target.querySelector('input');
+      const btn = e.target.querySelector('button');
+      btn.textContent = '✓ You\'re on the list!';
+      btn.style.background = '#22c55e';
+      btn.style.color = '#fff';
+      input.value = '';
+      input.placeholder = 'Thanks! We\'ll be in touch.';
+      input.disabled = true;
+      btn.disabled = true;
+    }
+  </script>
+
+</body>
+</html>

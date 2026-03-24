@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>What's Not Included — Full Cost Breakdown | Attaché AI</title>
+  <meta name="description" content="We believe in full transparency. Here's everything you'll need to budget for beyond the Attaché AI setup fee and monthly plan — with honest cost estimates." />
+  <link rel="canonical" href="https://getattacheai.com/whats-not-included" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --black: #0a0a0a; --white: #ffffff;
+      --gray-50: #fafafa; --gray-100: #f4f4f5;
+      --gray-400: #a1a1aa; --gray-600: #52525b;
+      --gray-800: #27272a; --accent: #c9a96e;
+      --accent-light: rgba(201,169,110,0.1);
+      --green: #22c55e; --green-light: rgba(34,197,94,0.1);
+    }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Inter', sans-serif; background: var(--black); color: var(--white); line-height: 1.6; -webkit-font-smoothing: antialiased; }
+
+    nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; padding: 20px 40px; display: flex; justify-content: space-between; align-items: center; background: rgba(10,10,10,0.9); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(255,255,255,0.06); }
+    .logo { font-size: 18px; font-weight: 600; color: var(--white); text-decoration: none; }
+    .logo span { color: var(--accent); }
+    .nav-cta { background: var(--accent); color: var(--black); padding: 10px 22px; border-radius: 8px; font-size: 14px; font-weight: 600; text-decoration: none; transition: opacity 0.2s; }
+    .nav-cta:hover { opacity: 0.85; }
+
+    /* HERO */
+    .hero { padding: 140px 24px 60px; text-align: center; }
+    .back-link { color: var(--gray-400); font-size: 14px; text-decoration: none; margin-bottom: 32px; display: inline-flex; align-items: center; gap: 6px; }
+    .back-link:hover { color: var(--white); }
+    .hero-badge { display: inline-flex; align-items: center; background: var(--accent-light); border: 1px solid rgba(201,169,110,0.3); color: var(--accent); padding: 6px 16px; border-radius: 100px; font-size: 13px; font-weight: 500; margin-bottom: 24px; }
+    .hero h1 { font-size: clamp(32px, 5vw, 54px); font-weight: 700; line-height: 1.1; letter-spacing: -1.5px; margin-bottom: 20px; }
+    .hero p { font-size: clamp(16px, 2vw, 19px); color: var(--gray-400); max-width: 560px; margin: 0 auto; }
+
+    /* HONEST NOTE */
+    .honest-note { padding: 0 24px 60px; }
+    .honest-note-inner { max-width: 760px; margin: 0 auto; background: var(--accent-light); border: 1px solid rgba(201,169,110,0.2); border-radius: 16px; padding: 32px 40px; }
+    .honest-note h2 { font-size: 20px; font-weight: 600; margin-bottom: 12px; color: var(--accent); }
+    .honest-note p { font-size: 15px; color: var(--gray-400); line-height: 1.7; }
+
+    /* COSTS TABLE */
+    .costs { padding: 0 24px 80px; }
+    .costs-inner { max-width: 760px; margin: 0 auto; }
+    .section-label { font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacing: 2px; color: var(--accent); margin-bottom: 12px; }
+    .section-title { font-size: clamp(26px, 4vw, 40px); font-weight: 700; letter-spacing: -1px; line-height: 1.1; margin-bottom: 40px; }
+
+    .cost-item { border-bottom: 1px solid rgba(255,255,255,0.06); padding: 32px 0; display: grid; grid-template-columns: 1fr auto; gap: 24px; align-items: start; }
+    .cost-item:last-child { border-bottom: none; }
+    .cost-left { display: flex; gap: 20px; align-items: flex-start; }
+    .cost-icon { font-size: 28px; flex-shrink: 0; margin-top: 2px; }
+    .cost-info h3 { font-size: 18px; font-weight: 600; margin-bottom: 6px; }
+    .cost-info .provider { font-size: 13px; color: var(--accent); font-weight: 500; margin-bottom: 10px; }
+    .cost-info p { font-size: 14px; color: var(--gray-400); line-height: 1.6; }
+    .cost-info .note { font-size: 13px; color: var(--gray-600); margin-top: 8px; font-style: italic; }
+    .cost-right { text-align: right; flex-shrink: 0; }
+    .cost-range { font-size: 20px; font-weight: 700; color: var(--white); white-space: nowrap; }
+    .cost-unit { font-size: 12px; color: var(--gray-400); margin-top: 2px; }
+    .cost-badge { display: inline-block; padding: 3px 10px; border-radius: 100px; font-size: 12px; font-weight: 600; margin-top: 6px; }
+    .badge-required { background: rgba(239,68,68,0.12); color: #f87171; border: 1px solid rgba(239,68,68,0.2); }
+    .badge-optional { background: rgba(34,197,94,0.1); color: #4ade80; border: 1px solid rgba(34,197,94,0.2); }
+    .badge-free { background: var(--green-light); color: var(--green); border: 1px solid rgba(34,197,94,0.2); }
+
+    /* TOTAL BOX */
+    .total-box { max-width: 760px; margin: 0 auto 80px; background: var(--gray-800); border-radius: 20px; padding: 40px; border: 1px solid rgba(255,255,255,0.08); }
+    .total-box h2 { font-size: 22px; font-weight: 600; margin-bottom: 24px; }
+    .total-row { display: flex; justify-content: space-between; align-items: center; padding: 12px 0; border-bottom: 1px solid rgba(255,255,255,0.06); font-size: 15px; }
+    .total-row:last-child { border-bottom: none; }
+    .total-row .label { color: var(--gray-400); }
+    .total-row .value { font-weight: 600; }
+    .total-row.grand { padding-top: 20px; }
+    .total-row.grand .label { color: var(--white); font-size: 17px; font-weight: 600; }
+    .total-row.grand .value { color: var(--accent); font-size: 22px; }
+    .total-note { font-size: 13px; color: var(--gray-600); margin-top: 16px; }
+
+    /* CTA BLOCK */
+    .cta-block { background: var(--gray-800); text-align: center; padding: 72px 24px; }
+    .cta-block h2 { font-size: clamp(26px, 4vw, 40px); font-weight: 700; letter-spacing: -1px; margin-bottom: 16px; }
+    .cta-block p { font-size: 18px; color: var(--gray-400); margin-bottom: 36px; max-width: 480px; margin-left: auto; margin-right: auto; }
+    .cta-buttons { display: flex; gap: 16px; flex-wrap: wrap; justify-content: center; }
+    .btn-primary { background: var(--accent); color: var(--black); padding: 16px 32px; border-radius: 10px; font-size: 16px; font-weight: 600; text-decoration: none; transition: opacity 0.2s; }
+    .btn-primary:hover { opacity: 0.85; }
+    .btn-secondary { background: rgba(255,255,255,0.08); color: var(--white); padding: 16px 32px; border-radius: 10px; font-size: 16px; font-weight: 600; text-decoration: none; border: 1px solid rgba(255,255,255,0.12); transition: all 0.2s; }
+    .btn-secondary:hover { background: rgba(255,255,255,0.12); }
+
+    footer { padding: 32px 24px; text-align: center; border-top: 1px solid rgba(255,255,255,0.06); color: var(--gray-600); font-size: 14px; }
+
+    @media (max-width: 600px) {
+      nav { padding: 16px 20px; }
+      .cost-item { grid-template-columns: 1fr; }
+      .cost-right { text-align: left; }
+      .honest-note-inner { padding: 24px; }
+      .total-box { padding: 28px 24px; }
+      .cta-buttons { flex-direction: column; align-items: center; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="index.html" class="logo">Attaché<span>.</span>AI</a>
+    <a href="https://calendly.com/getattacheai" class="nav-cta" target="_blank">Book a Free Call</a>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <a href="index.html" class="back-link">← Back to home</a>
+    <div class="hero-badge">✦ Full transparency</div>
+    <h1>What's not included —<br />and what it actually costs.</h1>
+    <p>No surprises. Here's everything you'll need to budget for beyond the Attaché AI setup fee and monthly plan.</p>
+  </section>
+
+  <!-- HONEST NOTE -->
+  <div class="honest-note">
+    <div class="honest-note-inner">
+      <h2>Why we're telling you this upfront</h2>
+      <p>Your AI assistant runs on world-class third-party services — the same ones powering the most advanced AI products in the world. We don't mark these up or bundle them with hidden fees. You pay the providers directly, at their standard rates, and keep full ownership of every account. We help you set them all up as part of your onboarding.</p>
+    </div>
+  </div>
+
+  <!-- COSTS BREAKDOWN -->
+  <div class="costs" id="breakdown">
+    <div class="costs-inner">
+      <div class="section-label">The full picture</div>
+      <h2 class="section-title">Third-party costs, explained.</h2>
+
+      <!-- LLM -->
+      <div class="cost-item">
+        <div class="cost-left">
+          <div class="cost-icon">🧠</div>
+          <div class="cost-info">
+            <h3>AI Model (LLM)</h3>
+            <div class="provider">Anthropic Claude · OpenAI GPT-4o · Google Gemini</div>
+            <p>The brain of your assistant. You pay the AI provider directly based on how much you use it — charged per message, not per month. Light users pay less. Heavy users pay more. We help you choose the right model for your budget and use case.</p>
+            <p class="note">Most clients land between $20–50/mo. Power users who rely on the assistant all day may reach $80–100/mo.</p>
+          </div>
+        </div>
+        <div class="cost-right">
+          <div class="cost-range">$20–50</div>
+          <div class="cost-unit">/ month avg.</div>
+          <div class="cost-badge badge-required">Required</div>
+        </div>
+      </div>
+
+      <!-- VOICE -->
+      <div class="cost-item">
+        <div class="cost-left">
+          <div class="cost-icon">🎙️</div>
+          <div class="cost-info">
+            <h3>Voice Calling</h3>
+            <div class="provider">Vapi.ai + Twilio</div>
+            <p>Two services work together to give your assistant a real phone number and voice. Vapi handles the AI voice layer; Twilio provides the actual phone number and call routing. Both are billed by the minute — you only pay when calls happen.</p>
+            <p class="note">Casual users (a few calls/week): ~$10–15/mo. Active users (daily calls): ~$25–40/mo.</p>
+          </div>
+        </div>
+        <div class="cost-right">
+          <div class="cost-range">$10–40</div>
+          <div class="cost-unit">/ month avg.</div>
+          <div class="cost-badge badge-required">Required for voice</div>
+        </div>
+      </div>
+
+      <!-- PHONE NUMBER -->
+      <div class="cost-item">
+        <div class="cost-left">
+          <div class="cost-icon">📞</div>
+          <div class="cost-info">
+            <h3>Phone Number</h3>
+            <div class="provider">Twilio</div>
+            <p>A dedicated phone number for your assistant — so it has a real number people can call and text. Included in your Twilio account setup. Flat monthly fee regardless of usage.</p>
+            <p class="note">One-time setup included in your onboarding. Monthly cost billed directly by Twilio.</p>
+          </div>
+        </div>
+        <div class="cost-right">
+          <div class="cost-range">~$2</div>
+          <div class="cost-unit">/ month</div>
+          <div class="cost-badge badge-required">Required for voice</div>
+        </div>
+      </div>
+
+      <!-- SEARCH -->
+      <div class="cost-item">
+        <div class="cost-left">
+          <div class="cost-icon">🔍</div>
+          <div class="cost-info">
+            <h3>Web Search</h3>
+            <div class="provider">Brave Search API</div>
+            <p>Lets your assistant search the web in real time — finding information, researching vendors, checking prices, and more. Brave offers a free tier that covers most users. Heavy search usage may require a paid plan.</p>
+            <p class="note">Free tier covers up to 2,000 searches/month. Most users never exceed this.</p>
+          </div>
+        </div>
+        <div class="cost-right">
+          <div class="cost-range">$0–3</div>
+          <div class="cost-unit">/ month</div>
+          <div class="cost-badge badge-free">Usually free</div>
+        </div>
+      </div>
+
+      <!-- EMAIL -->
+      <div class="cost-item">
+        <div class="cost-left">
+          <div class="cost-icon">📧</div>
+          <div class="cost-info">
+            <h3>Email Access</h3>
+            <div class="provider">Gmail (Google)</div>
+            <p>Your assistant connects to your existing Gmail account. No additional cost — Google provides the API access for free. If you use a different email provider (Outlook, custom domain), we can connect those too.</p>
+            <p class="note">Gmail is free. Custom domain email via Google Workspace costs ~$6/mo if you don't already have it.</p>
+          </div>
+        </div>
+        <div class="cost-right">
+          <div class="cost-range">$0</div>
+          <div class="cost-unit">/ month</div>
+          <div class="cost-badge badge-free">Free</div>
+        </div>
+      </div>
+
+      <!-- TELEGRAM -->
+      <div class="cost-item">
+        <div class="cost-left">
+          <div class="cost-icon">📱</div>
+          <div class="cost-info">
+            <h3>Telegram Messaging</h3>
+            <div class="provider">Telegram</div>
+            <p>The app you use to text your assistant. Free to use, no account fees, no message limits. Works on iPhone, Android, and desktop. If you prefer WhatsApp or iMessage, those can be connected instead — also free.</p>
+          </div>
+        </div>
+        <div class="cost-right">
+          <div class="cost-range">$0</div>
+          <div class="cost-unit">/ month</div>
+          <div class="cost-badge badge-free">Free</div>
+        </div>
+      </div>
+
+      <!-- CLOUD MAC (optional) -->
+      <div class="cost-item">
+        <div class="cost-left">
+          <div class="cost-icon">🖥️</div>
+          <div class="cost-info">
+            <h3>Cloud Mac Mini Hosting</h3>
+            <div class="provider">RentAMac.io or similar</div>
+            <p>Only relevant if you're on the <strong style="color:var(--white)">"We Handle Everything"</strong> plan. The $199/month plan already includes this cost — we provision and manage the Mac Mini for you. If you're on the $99 "Bring Your Own Mac" plan, this doesn't apply.</p>
+            <p class="note">Included in the $199/mo plan. Not an additional cost.</p>
+          </div>
+        </div>
+        <div class="cost-right">
+          <div class="cost-range">Included</div>
+          <div class="cost-unit">in $199/mo plan</div>
+          <div class="cost-badge badge-optional">Optional</div>
+        </div>
+      </div>
+
+      <!-- CUSTOM DOMAIN EMAIL -->
+      <div class="cost-item">
+        <div class="cost-left">
+          <div class="cost-icon">🌐</div>
+          <div class="cost-info">
+            <h3>Custom Domain Email</h3>
+            <div class="provider">Google Workspace · Namecheap · etc.</div>
+            <p>If you want your assistant to send emails from a custom address like <em>assistant@yourname.com</em> instead of a Gmail address, you'll need a domain and email hosting. Most clients use their existing domain. If you don't have one, domains cost ~$12–15/year.</p>
+            <p class="note">Most clients skip this — your assistant works perfectly with a regular Gmail account.</p>
+          </div>
+        </div>
+        <div class="cost-right">
+          <div class="cost-range">$0–6</div>
+          <div class="cost-unit">/ month</div>
+          <div class="cost-badge badge-optional">Optional</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- TOTAL SUMMARY -->
+  <div style="padding: 0 24px 80px;">
+    <div class="total-box">
+      <h2>What to budget each month</h2>
+      <div class="total-row">
+        <span class="label">Attaché AI plan (Bring Your Own Mac)</span>
+        <span class="value">$99/mo</span>
+      </div>
+      <div class="total-row">
+        <span class="label">AI Model (Claude or GPT-4o)</span>
+        <span class="value">~$20–50/mo</span>
+      </div>
+      <div class="total-row">
+        <span class="label">Voice calling (Vapi + Twilio)</span>
+        <span class="value">~$10–40/mo</span>
+      </div>
+      <div class="total-row">
+        <span class="label">Phone number</span>
+        <span class="value">~$2/mo</span>
+      </div>
+      <div class="total-row">
+        <span class="label">Web search, email, messaging</span>
+        <span class="value">$0–3/mo</span>
+      </div>
+      <div class="total-row grand">
+        <span class="label">Realistic total (typical user)</span>
+        <span class="value">~$130–195/mo</span>
+      </div>
+      <p class="total-note">Compare to a part-time human assistant: $2,000–4,000/month. Your AI works 24/7, never calls in sick, and gets better every week.</p>
+    </div>
+  </div>
+
+  <!-- CTA -->
+  <div class="cta-block">
+    <h2>No surprises. Ever.</h2>
+    <p>We walk you through every cost on your onboarding call — and help you set up every account. Book a free 30 minutes.</p>
+    <div class="cta-buttons">
+      <a href="https://calendly.com/getattacheai" class="btn-primary" target="_blank">Book a Free Call</a>
+      <a href="index.html" class="btn-secondary">Back to Pricing</a>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2026 Attaché AI · <a href="mailto:hello@getattacheai.com" style="color:inherit">hello@getattacheai.com</a> · <a href="index.html" style="color:inherit">Back to home</a></p>
+  </footer>
+
+</body>
+</html>
