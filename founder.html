@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>A Note from Our Founder | Attaché AI</title>
+  <meta name="description" content="Why Robert Juul Glaesel built Attaché AI — and why owning your AI assistant matters more than renting it." />
+  <link rel="canonical" href="https://getattacheai.com/founder" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="A Note from Our Founder | Attaché AI" />
+  <meta property="og:description" content="Why Robert Juul Glaesel built Attaché AI — and why owning your AI assistant matters more than renting it." />
+  <meta property="og:url" content="https://getattacheai.com/founder" />
+  <meta property="og:type" content="article" />
+  <meta property="og:image" content="https://getattacheai.com/images/robert.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="A Note from Our Founder | Attaché AI" />
+  <meta name="twitter:description" content="Why Robert Juul Glaesel built Attaché AI — and why owning your AI assistant matters more than renting it." />
+
+  <!-- Structured Data: Person / Founder -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Robert Juul Glaesel",
+    "jobTitle": "Founder",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Attaché AI",
+      "url": "https://getattacheai.com"
+    },
+    "sameAs": ["https://www.linkedin.com/in/robertjuulglaesel/"],
+    "image": "https://getattacheai.com/images/robert.jpg"
+  }
+  </script>
+
+  <!-- Structured Data: Article -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "A Note from Our Founder",
+    "description": "Why Robert Juul Glaesel built Attaché AI — and why owning your AI assistant matters more than renting it.",
+    "author": {
+      "@type": "Person",
+      "name": "Robert Juul Glaesel",
+      "url": "https://www.linkedin.com/in/robertjuulglaesel/"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Attaché AI",
+      "url": "https://getattacheai.com"
+    },
+    "image": "https://getattacheai.com/images/robert.jpg",
+    "datePublished": "2026-03-24"
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --black: #0a0a0a;
+      --white: #ffffff;
+      --gray-50: #fafafa;
+      --gray-100: #f4f4f5;
+      --gray-400: #a1a1aa;
+      --gray-600: #52525b;
+      --gray-800: #27272a;
+      --accent: #c9a96e;
+      --accent-light: #f0e6d3;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--black);
+      color: var(--white);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* NAV */
+    nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 100;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: rgba(10,10,10,0.85);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+
+    .logo {
+      font-size: 18px;
+      font-weight: 600;
+      letter-spacing: -0.3px;
+      color: var(--white);
+      text-decoration: none;
+    }
+    .logo span { color: var(--accent); }
+
+    nav a.cta-nav {
+      background: var(--accent);
+      color: var(--black);
+      padding: 10px 22px;
+      border-radius: 8px;
+      font-size: 14px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: opacity 0.2s;
+    }
+    nav a.cta-nav:hover { opacity: 0.85; }
+
+    /* HERO */
+    .hero {
+      padding: 160px 24px 80px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: -200px; left: 50%;
+      transform: translateX(-50%);
+      width: 700px; height: 700px;
+      background: radial-gradient(circle, rgba(201,169,110,0.10) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(201,169,110,0.1);
+      border: 1px solid rgba(201,169,110,0.3);
+      color: var(--accent);
+      padding: 6px 16px;
+      border-radius: 100px;
+      font-size: 13px;
+      font-weight: 500;
+      margin-bottom: 32px;
+      letter-spacing: 0.3px;
+    }
+
+    .hero h1 {
+      font-size: clamp(36px, 5vw, 60px);
+      font-weight: 700;
+      letter-spacing: -1.5px;
+      line-height: 1.1;
+      margin-bottom: 0;
+    }
+
+    /* FOUNDER SECTION */
+    .founder {
+      padding: 80px 24px 120px;
+    }
+
+    .founder-inner {
+      max-width: 720px;
+      margin: 0 auto;
+    }
+
+    /* Profile card */
+    .profile-card {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+      margin-bottom: 64px;
+      padding: 32px;
+      background: rgba(255,255,255,0.03);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 16px;
+    }
+
+    .profile-photo {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      object-position: center top;
+      border: 2px solid rgba(201,169,110,0.4);
+      flex-shrink: 0;
+    }
+
+    .profile-info h2 {
+      font-size: 20px;
+      font-weight: 600;
+      margin-bottom: 4px;
+    }
+
+    .profile-info p {
+      font-size: 14px;
+      color: var(--gray-400);
+      margin-bottom: 12px;
+    }
+
+    .linkedin-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--accent);
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 500;
+      transition: opacity 0.2s;
+    }
+    .linkedin-link:hover { opacity: 0.75; }
+
+    .linkedin-link svg {
+      width: 16px;
+      height: 16px;
+      fill: currentColor;
+    }
+
+    /* Letter body */
+    .letter {
+      font-size: 18px;
+      line-height: 1.8;
+      color: var(--gray-400);
+    }
+
+    .letter p {
+      margin-bottom: 28px;
+    }
+
+    .letter p:first-child {
+      font-size: 22px;
+      font-weight: 500;
+      color: var(--white);
+      line-height: 1.5;
+    }
+
+    .letter strong {
+      color: var(--white);
+      font-weight: 600;
+    }
+
+    .letter .landlord {
+      color: var(--white);
+      font-style: italic;
+    }
+
+    .signature {
+      margin-top: 48px;
+      padding-top: 40px;
+      border-top: 1px solid rgba(255,255,255,0.08);
+    }
+
+    .signature p {
+      font-size: 16px;
+      color: var(--gray-400);
+      margin-bottom: 4px;
+    }
+
+    .signature .sig-name {
+      font-size: 18px;
+      font-weight: 600;
+      color: var(--white);
+      margin-bottom: 2px;
+    }
+
+    .signature .sig-title {
+      font-size: 14px;
+      color: var(--accent);
+    }
+
+    /* CTA */
+    .cta-section {
+      background: rgba(201,169,110,0.06);
+      border: 1px solid rgba(201,169,110,0.2);
+      border-radius: 16px;
+      padding: 48px 40px;
+      text-align: center;
+      margin-top: 80px;
+      max-width: 720px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .cta-section h2 {
+      font-size: 28px;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+      margin-bottom: 12px;
+    }
+
+    .cta-section p {
+      font-size: 16px;
+      color: var(--gray-400);
+      margin-bottom: 32px;
+    }
+
+    .email-form {
+      display: flex;
+      max-width: 420px;
+      margin: 0 auto;
+      gap: 0;
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.12);
+      border-radius: 12px;
+      overflow: hidden;
+      transition: border-color 0.2s;
+    }
+    .email-form:focus-within { border-color: var(--accent); }
+
+    .email-form input {
+      flex: 1;
+      background: transparent;
+      border: none;
+      padding: 16px 20px;
+      font-size: 15px;
+      color: var(--white);
+      font-family: 'Inter', sans-serif;
+      outline: none;
+    }
+    .email-form input::placeholder { color: var(--gray-600); }
+
+    .email-form button {
+      background: var(--accent);
+      color: var(--black);
+      border: none;
+      padding: 16px 24px;
+      font-size: 14px;
+      font-weight: 600;
+      cursor: pointer;
+      font-family: 'Inter', sans-serif;
+      white-space: nowrap;
+      transition: opacity 0.2s;
+    }
+    .email-form button:hover { opacity: 0.85; }
+
+    /* FOOTER */
+    footer {
+      padding: 32px 24px;
+      text-align: center;
+      border-top: 1px solid rgba(255,255,255,0.06);
+      color: var(--gray-600);
+      font-size: 14px;
+    }
+
+    @media (max-width: 600px) {
+      nav { padding: 16px 20px; }
+      .profile-card { flex-direction: column; text-align: center; }
+      .email-form { flex-direction: column; border-radius: 12px; }
+      .email-form button { border-radius: 0 0 10px 10px; padding: 14px; }
+      .cta-section { padding: 40px 24px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <a href="/" class="logo">Attaché<span>.</span>AI</a>
+    <a href="/#waitlist" class="cta-nav">Get Early Access</a>
+  </nav>
+
+  <!-- HERO -->
+  <div class="hero">
+    <div class="hero-badge">✦ From the founder</div>
+    <h1>A Note from<br />Our Founder</h1>
+  </div>
+
+  <!-- FOUNDER LETTER -->
+  <section class="founder">
+    <div class="founder-inner">
+
+      <!-- Profile Card -->
+      <div class="profile-card">
+        <img src="/images/robert.jpg" alt="Robert Juul Glaesel, Founder of Attaché AI" class="profile-photo" />
+        <div class="profile-info">
+          <h2>Robert Juul Glaesel</h2>
+          <p>Founder, Attaché AI</p>
+          <a href="https://www.linkedin.com/in/robertjuulglaesel/" target="_blank" rel="noopener noreferrer" class="linkedin-link">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            Connect on LinkedIn
+          </a>
+        </div>
+      </div>
+
+      <!-- Letter -->
+      <div class="letter">
+        <p>I've hired assistants in Argentina. In the Philippines. It never worked.</p>
+
+        <p>Not because they weren't good. Because by the time someone knows you well enough to actually help you — they leave. Or double their rate. And you start over.</p>
+
+        <p>I read <em>The 4-Hour Work Week</em> and wanted that life. I just couldn't hold onto it.</p>
+
+        <p>Then AI arrived. And I saw it immediately: <strong>this is the assistant that doesn't quit.</strong></p>
+
+        <p>But I wasn't going to rent it from Google.</p>
+
+        <p><span class="landlord">The moment something becomes truly valuable, you don't want a landlord.</span> A landlord raises your rent. A landlord can lock you out. A landlord owns the thing — not you.</p>
+
+        <p>So I built Attaché AI.</p>
+
+        <p>Your assistant runs on your hardware. Your Mac Mini. Your data never leaves. The context you build over months and years — every preference, every habit, every shortcut — is yours to keep. Cancel tomorrow and walk away with everything.</p>
+
+        <p><strong>No one can price you out when it becomes indispensable. No one can take it away.</strong></p>
+
+        <p>We help you build it. We help you run it. You train it. You own it.</p>
+
+        <p>Forever.</p>
+
+        <div class="signature">
+          <p class="sig-name">Robert Juul Glaesel</p>
+          <p class="sig-title">Founder, Attaché AI</p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- CTA -->
+    <div class="cta-section">
+      <h2>Ready to own yours?</h2>
+      <p>We take on a limited number of clients each month. Join the waitlist — we'll reach out within 48 hours.</p>
+      <form class="email-form" onsubmit="handleSubmit(event)">
+        <input type="email" placeholder="Enter your email address" required />
+        <button type="submit">Get Early Access</button>
+      </form>
+    </div>
+
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2026 Attaché AI · <a href="mailto:hello@getattacheai.com" style="color:inherit">hello@getattacheai.com</a></p>
+  </footer>
+
+  <script>
+    function handleSubmit(e) {
+      e.preventDefault();
+      const input = e.target.querySelector('input');
+      const btn = e.target.querySelector('button');
+      btn.textContent = '✓ You\'re on the list!';
+      btn.style.background = '#22c55e';
+      btn.style.color = '#fff';
+      input.value = '';
+      input.placeholder = 'Thanks! We\'ll be in touch.';
+      input.disabled = true;
+      btn.disabled = true;
+    }
+  </script>
+
+</body>
+</html>
